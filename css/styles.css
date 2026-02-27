@@ -713,11 +713,15 @@ p {
     flex-direction: column;
     width: 360px;
     align-items: flex-start;
-    gap: 8px;
+}
+
+.form-field {
+    width: 100%;
+    margin-bottom: 8px;
 }
 
 .form-field-comment {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .form-label {
@@ -792,7 +796,7 @@ p {
 }
 
 .form-checkbox {
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 
 .checkbox-label {
