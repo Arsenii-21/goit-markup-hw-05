@@ -641,7 +641,6 @@ p {
     z-index: 999;
 }
 
-.modal-toggle:checked ~ .modal-overlay,
 .modal-overlay.is-open {
     opacity: 1;
     visibility: visible; 
