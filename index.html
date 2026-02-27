@@ -41,7 +41,7 @@
                 <div class="container">
                   <h1 class="hero-title">Effective Solutions for Your Business</h1>
                    <div class="hero-button-wrapper">
-                     <label for="modal-toggle" class="hero-button">Order Service</label>
+                     <a href="#modal" class="hero-button">Order Service</a>
                     </div>
                 </div>
             </section>
@@ -456,15 +456,15 @@
             </div>
         </footer>
 
-        <input type="checkbox" id="modal-toggle" class="modal-toggle visually-hidden"/>
+
         <!-- Modal -->
-        <div class="modal-overlay">
+        <div class="modal-overlay" id="modal">
             <div class="modal">
-                <label for="modal-toggle" class="modal-close-btn">
-                    <svg width="24" height="24" class="modal-close-icon">
+                <a href="#" class="modal-close-btn">
+                    <svg width="10" height="10" class="modal-close-icon">
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
-                </label>
+                </a>
                 <p class="modal-title">Leave your contacts and we will call you back</p>
                 <form class="modal-form">
                     <div class="form-field">
@@ -494,7 +494,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="form-field">
+                    <div class="form-field" style="margin-bottom: 16px;">
                         <label for="user-comment" class="form-label">Comment</label>
                         <textarea id="user-comment" name="user-comment" class="form-textarea" placeholder="Text input"></textarea>
                     </div>
