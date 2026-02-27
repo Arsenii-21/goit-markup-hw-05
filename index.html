@@ -41,7 +41,7 @@
                 <div class="container">
                   <h1 class="hero-title">Effective Solutions for Your Business</h1>
                    <div class="hero-button-wrapper">
-                     <label for="modal-toggle" class="hero-button">Order Service</label>
+                     <button type="button" class="hero-button" data-modal-open>Order Service</button>
                     </div>
                 </div>
             </section>
@@ -456,12 +456,14 @@
             </div>
         </footer>
 
-        <input type="checkbox" id="modal-toggle" class="modal-toggle visually-hidden"/>
-
         <!-- Modal -->
         <div class="modal-overlay">
             <div class="modal">
-                <label for="modal-toggle" class="modal-close-btn"></label>
+                <label for="modal-toggle" class="modal-close-btn">
+                    <svg width="8" height="8" class="modal-close-icon">
+                        <use href="./images/icons.svg#icon-close-black"></use>
+                    </svg>
+                </label>
                 <p class="modal-title">Leave your contacts and we will call you back</p>
                 <form class="modal-form">
                     <div class="form-field">
@@ -510,5 +512,18 @@
                 </form>
             </div>
         </div>
+        <script>
+            const modal = document.querySelector('.modal-overlay');
+            const openBtn = document.querySelector('[data-modal-open]');
+            const closeBtn = document.querySelector('.modal-close-btn');
+
+            openBtn.addEventListener('click', function() {
+                modal.classList.add('is-open');
+            });
+
+            closeBtn.addEventListener('click', function() {
+                modal.classList.remove('is-open');
+            });
+        </script>
     </body>
 </html>
